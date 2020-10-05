@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" >EasyWeather</string>
+
+    <string name="city_field">Город</string>
+    <string name="icon">Иконка</string>
+    <string name="temp">Температура</string>
+    <string name="current_temperature_field">+20</string>
+    <string name="feel_temperature_field">+15</string>
+    <string name="feel">Ощущается как</string>
+
+</resources>
