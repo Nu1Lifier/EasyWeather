@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">EasyWeather</string>
+    <string name="app_name" >EasyWeather</string>
+
+    <string name="city_field">City </string>
+    <string name="icon">Icon</string>
+    <string name="temp">Temperature</string>
+    <string name="current_temperature_field">+20</string>
+    <string name="feel_temperature_field">+15</string>
+    <string name="feel">feels like</string>
+
 </resources>
