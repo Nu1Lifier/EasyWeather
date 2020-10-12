@@ -8,7 +8,7 @@
     tools:context=".MainActivity2">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/CitySelection"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="City selection"
@@ -34,7 +34,7 @@
         app:layout_constraintBottom_toTopOf="@+id/BackButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/CitySelection"
         app:layout_constraintVertical_bias="0.0">
 
         <TextView
