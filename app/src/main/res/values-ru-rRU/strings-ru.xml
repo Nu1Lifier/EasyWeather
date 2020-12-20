@@ -9,4 +9,9 @@
     <string name="feel_temperature_field">+15</string>
     <string name="feel">Ощущается как</string>
 
+
+    <string name="dubai">Дубай</string>
+    <string name="newYork">Нью Йорк</string>
+    <string name="london">Лондон</string>
+
 </resources>

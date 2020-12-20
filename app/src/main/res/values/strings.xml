@@ -4,9 +4,17 @@
     <string name="city_field">City </string>
     <string name="icon">Icon</string>
     <string name="temp">Temperature</string>
-    <string name="current_temperature_field">+20</string>
-    <string name="feel_temperature_field">+15</string>
+    <string name="feel_temperature_field">+20</string>
+    <string name="current_temperature_field">+15</string>
     <string name="feel">feels like</string>
+
+
+
+    <string name="dubai">Dubai</string>
+    <string name="newYork">New York</string>
+    <string name="london">London</string>
+
+
 
 
     <string-array name="cities">
