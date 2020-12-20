@@ -8,5 +8,7 @@
     <string name="current_temperature_field">+20</string>
     <string name="feel_temperature_field">+15</string>
     <string name="feel">Ощущается как</string>
+    <string name="info">Инфо</string>
+
 
 </resources>

@@ -7,6 +7,7 @@
     <string name="current_temperature_field">+20</string>
     <string name="feel_temperature_field">+15</string>
     <string name="feel">feels like</string>
+<<<<<<< Updated upstream
 
 
     <string-array name="cities">
@@ -18,4 +19,7 @@
     </string-array>
 
 
+=======
+    <string name="info">info</string>
+>>>>>>> Stashed changes
 </resources>
