@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.LENGTH_SHORT).show();
 
 
-        TextView cityField = findViewById(R.id.city_field);
+        TextView cityField = findViewById(R.id.selectedCity);
         cityField.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
