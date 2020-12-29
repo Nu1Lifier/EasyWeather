@@ -8,6 +8,15 @@
     <string name="current_temperature_field">+20</string>
     <string name="feel_temperature_field">+15</string>
     <string name="feel">Ощущается как</string>
+    <string name="dubai">Dubai</string>
+    <string name="moscow">Moscow</string>
+    <string name="london">London</string>
+    <string name="new_york">New York</string>
+    <string name="settings">settings</string>
+    <string name="todo">TODO</string>
+    <string name="back">Back</string>
+    <string name="Italy">Italy</string>
+    <string name="Cyprus">Cyprus</string>
 
 
 </resources>
