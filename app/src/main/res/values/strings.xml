@@ -16,5 +16,7 @@
     <string name="back">Back</string>
     <string name="Italy">Italy</string>
     <string name="Cyprus">Cyprus</string>
+    <string name="wind_speed_and_air_pressure">wind speed and air pressure</string>
+    <string name="dark_mode">Dark mode</string>
 
 </resources>

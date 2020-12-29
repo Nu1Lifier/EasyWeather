@@ -20,13 +20,13 @@ public class Activity_Settings extends AppCompatActivity {
         ImageView sun = findViewById(R.id.imageView2);
 
 
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Activity_Main.class);
-                startActivity(intent);
-            }
-        });
+//        backButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(getApplicationContext(), Activity_Main.class);
+//                startActivity(intent);
+//            }
+//        });
 
         sun.setOnClickListener(new View.OnClickListener() {
             @Override
