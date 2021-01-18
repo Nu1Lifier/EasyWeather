@@ -11,30 +11,23 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class Activity_Cities extends AppCompatActivity {
+public class Activity_Cities extends AppCompatActivity implements Constants {
     private static final String TAG = "myLogs";
+    Button backButton = findViewById(R.id.BackButton);
+    final Button londonButton = findViewById(R.id.CityLondon);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cities);
 
-        Button backButton = findViewById(R.id.BackButton);
-        Button londonButton = findViewById(R.id.CityLondon);
-
-        String instanceState;
-        if (savedInstanceState == null){
-            instanceState = "Первый запуск!";
-        }
-        else{
-            instanceState = "Повторный запуск!";
-        }
-        Toast.makeText(getApplicationContext(), instanceState + " - onCreate()", Toast.LENGTH_SHORT).show();
-
         londonButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Activity_Main.class);
+                Bd bd = new Bd();
+                bd.text = londonButton.getText().toString();
+                Intent intent = new Intent(Activity_Cities.this, Activity_Main.class);
+                intent.putExtra(TEXT, bd);
                 startActivity(intent);
             }
         });
@@ -42,8 +35,7 @@ public class Activity_Cities extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Activity_Main.class);
-                startActivity(intent);
+                finish();
             }
         });
     }

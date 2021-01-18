@@ -6,34 +6,36 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 
 
-public class Activity_Main extends AppCompatActivity {
+public class Activity_Main extends AppCompatActivity implements Constants {
+    final Button londonButton = findViewById(R.id.CityLondon);
+    private final static int REQUEST_CODE = 1;
+    TextView cityField = findViewById(R.id.city_field);
+    TextView settings = findViewById(R.id.settings);
     private static final String TAG = "myLogs";
+
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        String instanceState;
-        TextView cityField = findViewById(R.id.city_field);
-        TextView settings = findViewById(R.id.settings);
-        if (savedInstanceState == null){
-            instanceState = "Первый запуск!";
-        }
-        else{
-            instanceState = "Повторный запуск!";
-        }
-        Toast.makeText(getApplicationContext(), instanceState + " - onCreate()", Toast.LENGTH_SHORT).show();
+
+        Bd bd = (Bd) getIntent().getExtras().getSerializable(TEXT);
+        cityField.setText(bd.text);
+
+
+
 
 
         cityField.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), Activity_Cities.class);
-                startActivity(intent);
+                startActivityForResult(intent, REQUEST_CODE);
             }
         });
 
@@ -46,6 +48,17 @@ public class Activity_Main extends AppCompatActivity {
             }
         });
 
+    }
+
+    protected void onActivityResult (int requestCode, int resultCode, Intent data){
+        if (requestCode != REQUEST_CODE){
+            super.onActivityResult(requestCode, resultCode, data);
+            return;
+        }
+
+        if (resultCode == RESULT_OK){
+            cityField.setText(data.getStringExtra("number"));
+        }
     }
 
     @Override
